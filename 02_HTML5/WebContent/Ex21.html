@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	span{
+		color: red;
+	}
+	
+	table{
+		border-color: #D5D5D5;
+	}
+</style>
+</head>
+<body>
+
+	<h2 align="center">회원가입</h2>
+	<form>
+		<table border="1" cellspacing="0" width="1000" align="center">
+			<tr>
+				<td><span>*</span>이름</td>
+				<td><input type="text" size="20"></td>
+			</tr>
+			<tr>
+				<td><span>*</span>아이디</td>
+				<td><input type="text" size="20">&nbsp;&nbsp;<input type="button" value="중복확인"></td>
+			</tr>
+			<tr>
+				<td><span>*</span>비밀번호</td>
+				<td><input type="password" size="20">&nbsp;&nbsp;*영문 대소문자/숫자/특수문자를 혼용하여 2종류 10~16자 또는 3종류 8~16자
+			</tr>
+			<tr>
+				<td><span>*</span>비밀번호 확인</td>
+				<td><input type="password" size="20">
+			</tr>
+			<tr>
+				<td><span>*</span>생일/성별</td>
+				<td>
+					<select>
+						<option value="">선택</option>
+						<option value="1990">1990</option>
+						<option value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+						<option value="1997">1997</option>
+						<option value="1998">1998</option>
+						<option value="1999">1999</option>
+						<option value="2000">2000</option>
+					</select>년
+					<select>
+						<option value="">선택</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>월
+					<input type="radio" name="gender" value="남자">남
+					<input type="radio" name="gender" value="여자">여
+				</td>
+			</tr>
+			<tr>
+				<td><span>*</span>우편번호</td>
+				<td><input type="text" size="5">-<input type="text" size="5">&nbsp;&nbsp;<input type="button" value="우편번호 검색"></td>
+			</tr>
+			<tr>
+				<td><span>*</span>집주소</td>
+				<td><input type="text" size="70"></td>
+			</tr>
+			<tr>
+				<td><span>*</span>상세주소</td>
+				<td><input type="text" size="70"></td>
+			</tr>
+			<tr>
+				<td><span>*</span>휴대폰</td>
+				<td>
+					<select>
+						<option value="">선택</option>
+						<option value="010">010</option>
+						<option value="017">017</option>
+						<option value="011">011</option>
+						<option value="016">016</option>
+					</select>-
+					<input type="text" size="5">-
+					<input type="text" size="5">
+				</td>
+			</tr>
+			<tr>
+				<td>이메일</td>
+				<td><input type="text" size="10">@
+					<select>
+						<option value="">선택</option>
+						<option value="gmail.com">gmail.com</option>
+						<option value="naver.com">naver.com</option>
+						<option value="daum.net">daum.net</option>
+						<option value="nate.com">nate.com</option>
+					</select>
+					<input type="button" value="중복확인">
+				</td>
+			</tr>
+			<tr>
+				<td>회사번호</td>
+				<td>
+					<select>
+						<option value="">선택</option>
+						<option value="02">02</option>
+						<option value="053">053</option>
+						<option value="031">031</option>
+						<option value="032">032</option>
+					</select>-
+					<input type="text" size="5">-
+					<input type="text" size="5">
+				</td>
+			</tr>
+			<tr>
+				<td>뉴스메일</td>
+				<td>
+					<input type="radio" name="news" value="ok" checked>받습니다.
+					<input type="radio" name="news" value="no">받지 않습니다.
+				</td>
+			</tr>
+			<tr>
+				<td>SMS안내(이벤트)</td>
+				<td>
+					<input type="radio" name="sms" value="ok" checked>받습니다.
+					<input type="radio" name="sms" value="no">받지 않습니다.
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>
