@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	// [문제1] 키보드로 두 수를 입력 받아서 덧셈, 뺄셈, 곱셈, 나눗셈 작업을 해 보세요.
+	
+	let su1 = prompt("수1");
+	let su2 = prompt("수2");
+	
+	document.write("<h2>더하기 : " + (parseInt(su1)+parseInt(su2)) +"</h2><br>");
+	document.write("<h2>빼기 : " + (parseInt(su1)-parseInt(su2)) +"</h2><br>");
+	document.write("<h2>곱하기 : " + (parseInt(su1)*parseInt(su2)) +"</h2><br>");
+	document.write("<h2>나누기 : " + (parseInt(su1)/parseInt(su2)) +"</h2><br><br><br><br><br><br><br><br>");
+	
+	document.write("<hr>");
+	// 나눗셈은 일단 자로형을 double 형으로 변환한 후에
+	// 나눗셈 작업을 진행함.
+	
+	// [문제2] 키보드로 회원의 이름과 나이, 연락처를 입력받아서
+	//		  화면에 출력해 보세요.
+	
+	let name = prompt("이름");
+	let age = prompt("나이");
+	let phone = prompt("연락처");
+	
+	document.write("회원 이름 : "+ name + "<br>");
+	document.write("회원 나이 : "+ age + "<br>");
+	document.write("회원 연락처 : "+ phone + "<br>");
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

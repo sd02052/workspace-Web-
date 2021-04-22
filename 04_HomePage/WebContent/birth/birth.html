@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 홈페이지</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+	function login_window() {
+		// window.open("파일경로명", "창이름", "가로폭/세로높이");
+		window.open("../login/login.html", "로그인", "width=380px, height=250px");
+	}
+	
+	function join_window(){
+		window.open("../join/join.html", "로그인", "width=500px, height=700px");
+	}
+</script>
+</head>
+<body>
+
+	<div id="container">
+		<header id="head"> <!-- 웹 문서의 상단 영역 -->
+			<div id="login">
+				<a href="../index.html">홈</a>
+				<a href="#" onclick="login_window()">로그인</a>
+				<a href="#" onclick="join_window()">회원가입</a>
+			</div> <!-- id="login" end -->
+			
+			<hgroup> <!-- 제목과 부제목을 그룹으로 묶어주는 역할 -->
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes, 1596~1650</h2>
+			</hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id="navi">
+			<ul>
+				<li><a href="#">탄 생</a></li>
+				<li><a href="../writing/writing.html">저 서</a></li>
+				<li><a href="../philosophy/philosophy.html">철 학</a></li>
+				<li><a href="../saying/saying.html">명 언</a></li>
+			</ul>
+		</nav>
+		
+		<!-- 웹 문서의 영역 설정 태그 - section 태그는 여러 번 사용 가능. -->
+		<section id="content">
+			<h2>데카르트 탄생</h2>
+			<!-- 문서의 본문 영역 -->
+			<article>
+				<h3>‘세상이라는 큰 책’에서 다양한 경험을 하던 시기</h3>
+				<p>르네 데카르트는 프랑스 투렌의 소도시 라에에서 부유한 귀족집안의 아들로 태어났다.</p> 
+				<p>그의 고향 라에는 1996년 데카르트 탄생 400주년을 기념하여 도시 이름을 데카르트로 바꿨다.</p>
+				<p>데카르트가 한 살 때 어머니가 세상을 떠났고, 열 살 무렵 라플레슈에서 예수회가 운영하는 학교,</p> 
+				<p>콜레쥬 로얄 앙리르그랑에 입학하여 8년간 고전어, 수사학, 철학, 역사, 물리 등을 공부했다.</p>
+				<div class="picture">
+					<img src="../images/birth01.jpg" alt="오른쪽 탁자에 있는 여왕의 오른쪽 인물이 데카르트" width="710" height="250">
+				</div>
+			</article>
+		</section>
+		
+		<!-- 문서의 보조 내용(알림, 광고) -->
+		<aside id="sidebar">
+			<h3>◐저서 구입◑</h3>
+			<p>저서 구입을 원하시는 분들은 전화 010-1111-1234로
+			연락주시기 바랍니다.</p>
+			<img src="../images/book1.png" width="130" height="160">
+			<img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		<!-- 문서의 하단 내용 -->
+		<footer id="foot">
+			<p>글 : 이성욱 / 저술가, 번역가</p>
+			<address>E-mail : sd02052@nate.com</address>
+			<p> Copyright &copy All right reserved</p> 
+		</footer>
+		
+	</div> <!-- id="container" end -->
+	
+</body>
+</html>

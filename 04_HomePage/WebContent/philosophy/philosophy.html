@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 홈페이지</title>
+<style type="text/css">
+	article p {
+		font-size: 12px;
+		margin-right: 5px;
+	}
+</style>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+	function login_window() {
+		// window.open("파일경로명", "창이름", "가로폭/세로높이");
+		window.open("../login/login.html", "로그인", "width=380px, height=250px");
+	}
+	
+	function join_window(){
+		window.open("../join/join.html", "로그인", "width=500px, height=700px");
+	}
+</script>
+</head>
+<body>
+
+	<div id="container">
+		<header id="head"> <!-- 웹 문서의 상단 영역 -->
+			<div id="login">
+				<a href="../index.html">홈</a>
+				<a href="#" onclick="login_window()">로그인</a>
+				<a href="#" onclick="join_window()">회원가입</a>
+			</div> <!-- id="login" end -->
+			
+			<hgroup> <!-- 제목과 부제목을 그룹으로 묶어주는 역할 -->
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes, 1596~1650</h2>
+			</hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id="navi">
+			<ul>
+				<li><a href="../birth/birth.html">탄 생</a></li>
+				<li><a href="../writing/writing.html">저 서</a></li>
+				<li><a href="#">철 학</a></li>
+				<li><a href="../saying/saying.html">명 언</a></li>
+			</ul>
+		</nav>
+		
+		<!-- 웹 문서의 영역 설정 태그 - section 태그는 여러 번 사용 가능. -->
+		<section id="content">
+			<h2>데카르트 철학</h2>
+			<!-- 문서의 본문 영역 -->
+			<article>
+				<h3>데카르트의 방법적 회의</h3>
+				<p>데카르트적 회의는 르네 데카르트의 글과 방법론이 곁들여진 방법론적 회의이다. 데카르트적 회의는 자신이 믿는 바의 진실성 여부에 대해서
+				 의심하는 체계적인 방법으로 철학의 특징적인 방법이 되었다. 이 의심의 방법은 절대적인 진실로서 받아들일 수 있는 것을 찾기 위해 자신의 
+				 모든 믿음을 의심한 르네 데카르트에 의해 서양 철학에 대중화 되었다.</p>
+				<h4>특성</h4>
+				<p>데카르트적 회의는 방법론적이다. 데카르트적 회의의 목적은 의심할 수 없는 것을 찾는 것으로서 의심을 절대적인 진리를 찾는 수단으로 
+				이용하는 것이다. 특히나 경험적 정보의 오류 가능성은 데카르트적 회의의 대상이 된다. 데카르트 회의론의 목적에 관해서는 여러 가지 
+				해석이 있다. 이 중 가장 저명한 것은 토대주의자들의 주장으로 데카르트의 회의론은 의심이 가능한 모든 믿음을 제외하는 것으로서 기본적인
+				 신념만을 남기는 것을 목표로 한다는 것이다. 이러한 의심할 여지가 없는 기본 신념으로부터 데카르트는 다음 지식을 파생하려고 시도한다. 
+				 그는 지식을 상대적인 관점으로 바라보는 것이 아니라 절대적인 진리를 토대로 쌓아갔다. 
+				 이는 대륙철학의 합리주의를 축약시켜 보여주는 원형적이고 중요한 예시이다.</p>
+				 <h4>기법</h4>
+				 <p>데카르트적 회의는(4개의 과학적인 단계로 나눌 수 있다. 첫째, 사실이라고 아는 정보를 받아들이는 것. 
+				 둘째, 이 사실들을 더 작은 단위로 나누는 것. 셋째, 간단한 문제들을 먼저 해결하는 것. 넷째, 더 확장된 문제들의 완전한 목록을 만드는 것. ) 
+				 의심을 과대하게 하는 것이므로 의심의 경향성을 가진다고 한다. (데카르트의 기준으로의 지식은 단순히 합리적인 것 아닌 가능한 모든 의심을 
+				 넘어선 것을 말한다. ) 그의 성찰(1641)에서 데카르트는 의심할 수 없는 절대적인 진리로만 이루어진 믿음체계를 처음부터 끝까지 철저하게 
+				 만들기 위하여 자신의 모든 믿음의 진실 여부를 의심하기에 이르렀다.</p>
+			</article>
+		</section>
+		
+		<!-- 문서의 보조 내용(알림, 광고) -->
+		<aside id="sidebar">
+			<h3>◐저서 구입◑</h3>
+			<p>저서 구입을 원하시는 분들은 전화 010-1111-1234로
+			연락주시기 바랍니다.</p>
+			<img src="../images/book1.png" width="130" height="160">
+			<img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		<!-- 문서의 하단 내용 -->
+		<footer id="foot">
+			<p>글 : 이성욱 / 저술가, 번역가</p>
+			<address>E-mail : sd02052@nate.com</address>
+			<p> Copyright &copy All right reserved</p> 
+		</footer>
+		
+	</div> <!-- id="container" end -->
+	
+</body>
+</html>
