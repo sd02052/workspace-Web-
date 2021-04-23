@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	// [문제1] 사용자가 아이디 하나를 키보드로 입력을 받는다. 입력 받은
+	// 아이디가 "hong"이면 "hong님 환영합니다." 라는
+	// 메세지를 화면에 출력해 보세요.
+	
+	let id = prompt("아이디를 입력하세요.");
+	if(id==="hong"){
+		document.write("hong님 환영합니다."+"<br>");
+	}
+	
+	// [문제2] 키보드로 정수를 입력받아서 입력받은 수가 짝수이면
+	// "짝수입니다." 라는 메세지를 화면에 출력해 보세요.
+	
+	let num = prompt("정수를 입력하세요.");
+	if(num % 2 === 0){
+		document.write("짝수입니다."+"<br>");
+	}
+	
+	// Nan : 숫자가 아닌 데이터를 숫자처럼 사용하고자 할 때
+	//		산술 연산의 결과가 유효하지 않는 값일 때
+	//		숫자가 너무 커서 표현할 수 없는 값일 때
+	
+	let a = Number("$1000");
+	document.write(a+ "<br>");
+	
+	document.write(0/0 + "<br>");
+	
+	let data;
+	document.write("data >>> " + data + "<br>");	
+</script>
+</head>
+<body>
+
+</body>
+</html>

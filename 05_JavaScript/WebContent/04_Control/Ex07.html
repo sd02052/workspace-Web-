@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 난수를 발생시켜서 추첨을 통해서 경품을 받게 해보자.
+	// 요구사항
+	// 1부터 10 사이의 숫자를 랜덤하게 뽑아보자.
+	// 3번 - 냉장고 당첨 / 5번 - 세탁기 당첨 / 8번 - TV 당첨.
+	// 그 이외의 번호는 꽝!!!
+
+	// Math.random() 함수는 0~1 사이의 랜덤 숫자를 발생시키는 함수.
+	// Math.random() * 10 을 곱하면 0부터 0까지의 랜덤한 숫자를 구할 수 있음.
+	// 대신에 정수값이 아닌 실수로 나오기 때문에 parseInt() 함수를 이용하여
+	// 정수로 형변환을 해주면 됨. 이 값에 1을 더해주면 1~ 10까지의 난수를 
+	// 받을수 있음.
+	let luckyNo = parseInt(Math.random() * 10) + 1;
+
+	switch (luckyNo) {
+	case 3:
+		document.write(luckyNo + "<br>");
+		document.write("냉장고 당첨");
+		break;
+	case 5:
+		document.write(luckyNo + "<br>");
+		document.write("세탁기 당첨");
+		break;
+	case 8:
+		document.write(luckyNo + "<br>");
+		document.write("TV 당첨");
+		break;
+	default:
+		document.write(luckyNo + "<br>");
+		document.write("꽝");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
