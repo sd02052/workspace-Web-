@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	onload = function() {
+		let myP = document.createElement("p");
+		let textNode = document.createTextNode("안녕하세요.");
+
+		myP.appendChild(textNode);
+		myP.style.color = "blue";
+
+		let myDiv = document.getElementById("myDiv");
+		myDiv.appendChild(myP);
+	}
+</script>
+</head>
+<body>
+
+	<div id="myDiv">
+		<!-- 
+		[문제] 아래와 같이 DOM을 이용하여 화면을 만들어 보세요.
+			
+			<p>안녕하세요.</p>
+		조건) "안녕하세요."라는 글자는 파란색으로 처리.
+		-->
+	</div>
+
+</body>
+</html>

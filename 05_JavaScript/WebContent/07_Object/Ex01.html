@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 객체 생성 방법 - 3가지
+	// 객체 생성 첫번째 방법
+	/*
+	let product= {
+		name : '갤럭시S21',
+		type : '핸드폰',
+		company : '삼성'
+	};
+	 */
+
+	// 객체 생성 두번째 방법
+	/*
+	let product = {};
+	product['name'] = '갤럭시S21';
+	product['type'] = '핸드폰';
+	product['company'] = '삼성';
+	 */
+
+	document.write(product['name'] + "<br>");
+
+	document.write("<hr>")
+
+	for ( let k in product) {
+		document.write(k + " >>> " + product[k] + "<br>");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

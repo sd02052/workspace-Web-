@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function sample() {
+		let sum = 0, count = 1;
+
+		while (true) {
+			let value = parseInt(prompt("수 입력"));
+
+			if (value == 0) {
+				document.write("종료");
+				return;
+				// 함수를 탈출하는 명령어.
+			}
+			sum += value;
+
+			document.write(count + " / " + sum + "<br>");
+			count++;
+		}
+	}
+
+	sample();
+</script>
+</head>
+<body>
+
+</body>
+</html>
