@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	// 찾은 노드 중에서 특정 노드에 접근하기
+	// 형식) $("요소선택"). filter(선택자)
+	// ul.menu li 에서 나온 결과값에 있는 항목 중에
+	// select 클래스가 적용된 노드를 찾아서 "3px solid red"를 적용하자.
+
+	$(function() {
+		let li_list = $("ul.menu li");
+		li_list.filter(".select").css("border", "3px solid red");
+	});
+</script>
+</head>
+<body>
+	<div id="sample_page" class="page">
+		샘플 페이지(div, id=sample_page class=page)
+		<div id="header">헤더 영역(div, id=header)</div>
+
+		<div id="content" class="sample_content">
+			노드 찾기(div, id=content, class=sample_content)
+			<ul class="menu">
+				일반 노드 찾기(ul, class=menu)
+				<li data-value="1">id로 찾기(li, data-value=1)</li>
+				<li class="select">tag로 찾기(li, class=select)</li>
+				<li data-value="2">class로 찾기(li, data-value=2)</li>
+				<li class="test1">속성으로 찾기(li, class=test1)</li>
+			</ul>
+		</div>
+
+		<div class="content_data">
+			자식 노드 찾기(div, class=content_data)
+			<p class="test1">1. 모든 자식 노드 찾기(p, class=test1)</p>
+			<p>2. 특정 자식 노드만 찾기(p)</p>
+			<p class="test2">3. 마지막 자식 노드 찾기(p, class=test2)</p>
+		</div>
+
+		<div id="footer">footer 영역(div, id=footer)</div>
+	</div>
+</body>
+</html>
