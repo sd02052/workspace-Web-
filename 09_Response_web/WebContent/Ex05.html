@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font-size: 16px; /* 기준이 되는 기본 크기를 지정함. */
+}
+
+.wrapper {
+	width: 96%;
+	margin: 0 auto;
+	font-size: 12px;
+}
+
+.header_text {
+	font-size: 2rem; /* 16px * 2 ==> 32px */
+}
+
+.text {
+	font-size: 1.5rem; /* 16px * 1.5 ==> 24px */
+	/*
+		그 이유는 rem 단위는 root 즉, body 태그를 처음부터 기본 크기로 
+		지정을 하기 때문에 중간에 기본이 되는 크기는 변경되지 않는다.
+	*/
+}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header_text">
+			<p>rem 단위를 제대로 알아보자.</p>
+			<p class="text">rem 단위의 특성</p>
+		</header>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	// - toggle() : 선택한 요소가 보이면 숨기고, 숨겨져 있으면 보이게 하는 기능.
+	//	형식) $("요소선택").toggle("효과속도", 콜백함수);
+	$(function() {
+		$(".btn").click(function() {
+			$("img").toggle(1000);
+		});
+	});
+</script>
+</head>
+<body>
+
+	<button class="btn">Toggle</button>
+	<br>
+	<img src="images/beauty.jpg">
+</body>
+</html>
