@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 90%;
+	margin: 0 auto;
+	border: 3px solid #000;
+}
+
+#wrap div {
+	display: inline-block;
+	height: 100px;
+}
+
+#wrap div:first-child {
+	background-color: tomato;
+}
+
+#wrap div:nth-child(2) {
+	background-color: skyblue;
+}
+
+#wrap div:nth-child(3) {
+	background-color: #00d2a5;
+}
+
+#wrap div:nth-child(4) {
+	background-color: #ff884d;
+}
+
+#wrap div:last-child {
+	background-color: lightgray;
+}
