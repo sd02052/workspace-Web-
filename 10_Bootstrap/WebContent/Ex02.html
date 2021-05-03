@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+<style type="text/css">
+div {
+	border: 1px solid gray;
+}
+</style>
+</head>
+<body>
+	<!-- 
+		부트스트랩에서 중요한 개념
+		1. .col-xs-* : 항상 가로로 배치
+		2. .col-sm-* : 767~520px 이하에서는 세로로 화면에 배치.
+		3. .col-md-* : 991~768px 에서는 세로로 화면에 배치.
+		4. .col-lg-* : 화면 가로 너비~992px 세로로 화면에 배치.
+	 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">div.col-xs-6</div>
+			<div class="col-xs-6">div.col-xs-6</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">div.col-sm-6</div>
+			<div class="col-sm-6">div.col-sm-6</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">div.col-md-6</div>
+			<div class="col-md-6">div.col-md-6</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">div.col-lg-6</div>
+			<div class="col-lg-6">div.col-lg-6</div>
+		</div>
+
+	</div>
+</body>
+</html>
